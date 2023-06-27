@@ -13,7 +13,7 @@ const PORT = 8000 || process.env.PORT;
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
 
-connectToMongoDB("mongodb://localhost:27017/short-url").then(() =>
+connectToMongoDB("mongodb+srv://navin-admin:September1392@cluster0.u1nd2hc.mongodb.net/SaiKiran?retryWrites=true&w=majority").then(() =>
   console.log("Mongodb connected")
 );
 
